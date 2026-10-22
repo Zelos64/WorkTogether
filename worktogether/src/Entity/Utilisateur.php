@@ -13,6 +13,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
 #[ORM\DiscriminatorMap([
     'administrateur' => Administrateur::class,
     'comptable' => Comptable::class,
+    'client' => Client::class,
 ])]
 abstract class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
 {
